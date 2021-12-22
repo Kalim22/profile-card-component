@@ -1,0 +1,140 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+*, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 639px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg), #19a2ae;
+  background-repeat: no-repeat no-repeat;
+  background-position: -350px -500px, 500px 350px;
+}
+
+.main .box {
+  width: 340px;
+  height: 370px;
+  background-color: #fff;
+  border-radius: 13px;
+  -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1), -1px -1px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1), -1px -1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.main .box .upper {
+  width: 340px;
+  height: 150px;
+  background: url(./images/bg-pattern-card.svg);
+  border-top-right-radius: 13px;
+  border-top-left-radius: 13px;
+}
+
+.main .box .lower {
+  position: relative;
+  width: 340px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: -40px;
+}
+
+.main .box .lower img {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 15px;
+}
+
+.main .box .lower .text {
+  position: relative;
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .box .lower .text p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  color: #2d3248;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.main .box .lower .text p:nth-child(2) {
+  color: #969696;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.main .box .lower .text p span {
+  color: #969696;
+  font-weight: 400;
+}
+
+.main .box .social {
+  width: 340px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-top: 1px solid lightgray;
+}
+
+.main .box .social p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  color: #2d3248;
+  font-size: 18px;
+  text-align: center;
+}
+
+.main .box .social p span {
+  font-size: 10px;
+  font-weight: 100;
+  color: #969696;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=index.css.map */

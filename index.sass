@@ -1,0 +1,95 @@
+// Font declaration
+// @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url(https://fonts.google.com/specimen/Kumbh+Sans)
+$kumbh-sans: 'Kumbh Sans', sans-serif
+
+// width declaration
+$wd: 340px
+    
+$Dark-cyan: hsl(185, 75%, 39%)
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%)
+$Dark-grayish-blue: hsl(227, 10%, 46%)
+$Dark-gray: hsl(0, 0%, 59%)
+$white: #fff
+
+*, body
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.main
+    width: 100%
+    height: 639px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg), $Dark-cyan //url(./images/bg-pattern-bottom.svg)
+    background-repeat: no-repeat no-repeat
+    background-position: -350px -500px, 500px 350px
+    .box
+        width: $wd 
+        height: 370px
+        background-color: $white
+        border-radius: 13px
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1), -1px -1px 4px 0 rgba(0,0,0,0.1)
+        .upper
+            width: $wd 
+            height: 150px
+            background: url(./images/bg-pattern-card.svg)
+            border-top-right-radius: 13px
+            border-top-left-radius: 13px
+        .lower
+            position: relative
+            width: $wd 
+            height: 150px
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            top: -40px
+            img
+                position: relative
+                width: 110px
+                height: 110px
+                object-fit: cover
+                border-radius: 50%
+                border: 5px solid $white
+                margin-bottom: 15px
+            .text
+                position: relative
+                width: $wd
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                p
+                    font-family: $kumbh-sans
+                    font-weight: 600
+                    color: $Very-dark-desaturated-blue
+                    line-height: 30px
+                    font-size: 18px
+                    &:nth-child(2)
+                        color: $Dark-gray
+                        font-weight: 400
+                        font-size: 15px
+                    span
+                        color: $Dark-gray
+                        font-weight: 400
+        .social
+            width: $wd
+            height: 70px
+            display: flex
+            align-items: center
+            justify-content: space-evenly
+            border-top: 1px solid lightgray
+            p
+                font-family: $kumbh-sans
+                font-weight: 700
+                color: $Very-dark-desaturated-blue
+                font-size: 18px
+                text-align: center
+                span
+                    font-size: 10px
+                    font-weight: 100
+                    color: $Dark-gray
+                    letter-spacing: 2px
